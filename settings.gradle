@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "day 17 CRUD SQLite"
