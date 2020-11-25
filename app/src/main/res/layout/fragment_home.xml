@@ -15,7 +15,7 @@
         android:text="Tambah"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rv_todo" />
+        app:layout_constraintTop_toBottomOf="@id/rv_home" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_todo"
@@ -23,13 +23,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Task baru"
+        android:hint="Note baru"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_add"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tie_todo"
+            android:id="@+id/tie_note"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp" />
@@ -37,7 +37,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_todo"
+        android:id="@+id/rv_home"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"

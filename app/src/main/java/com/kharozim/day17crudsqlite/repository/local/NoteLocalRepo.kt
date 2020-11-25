@@ -47,7 +47,7 @@ class NoteLocalRepo(context: Context) : NoteRepsitory {
 
     override fun deleteNote(id: Long): Long {
         val db = localDB.writableDatabase
-        val selection = "${NoteEntity.COLLUM_ID}"
+        val selection = "${NoteEntity.COLLUM_ID} =?"
         val selectionArgs = arrayOf("$id")
 
         db.delete(NoteEntity.TABLE_NAME, selection, selectionArgs)
@@ -80,7 +80,7 @@ class NoteLocalRepo(context: Context) : NoteRepsitory {
         }
         val id = db.insert(NoteEntity.TABLE_NAME, NoteEntity.COLLUM_ID, value)
         db.close()
-        return NoteModel(id, task)
+        return NoteModel(id, task, false)
     }
 
 

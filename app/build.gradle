@@ -4,6 +4,8 @@ plugins {
     id 'kotlin-kapt'
     //parcelize
     id 'kotlin-android-extensions'
+
+    id "androidx.navigation.safeargs.kotlin"
 }
 
 android {
